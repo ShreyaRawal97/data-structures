@@ -1,9 +1,3 @@
-# Credit goes to Websten from forums
-#
-# Use Dave's suggestions to finish your daysBetweenDates
-# procedure. It will need to take into account leap years
-# in addition to the correct number of days in each month.
-
 def isLeapYear(year):
     if (year % 400 == 0):
         return True
@@ -49,7 +43,6 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
     """Returns the number of days between year1/month1/day1
        and year2/month2/day2. Assumes inputs are valid dates
        in Gregorian calendar."""
-    # program defensively! Add an assertion if the input is not valid!
     assert not dateIsBefore(year2, month2, day2, year1, month1, day1)
     days = 0
     while dateIsBefore(year1, month1, day1, year2, month2, day2):
