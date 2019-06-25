@@ -1,0 +1,9 @@
+First in, first out
+opposite of stack
+last element = tail
+first element = head
+removal of head = dequeue
+addition of tail = enqueue
+Two types of queues:
+double ended queue (can dequeue and enqueue from both ends)
+priority queue (dequeue: remove element with highest priority)
